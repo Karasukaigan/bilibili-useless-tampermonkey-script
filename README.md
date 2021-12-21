@@ -1,4 +1,4 @@
-# UP主觉得很淦
+# Bilibili整活脚本
 一些用来整活的Tampermonkey脚本。  
 ## 说明
 ### ①UP主觉得很淦.js
