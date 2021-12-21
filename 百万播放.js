@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         UP主觉得很淦
+// @name         百万播放
 // @namespace    http://tampermonkey.net/
 // @version      2.0.0
 // @description  用来整活的Tampermonkey脚本。
@@ -11,10 +11,11 @@
 // @grant        none
 // ==/UserScript==
 
-// 等待“UP主觉得很赞”所在的元素加载完成后，执行changeText()
-waitForKeyElements(".reply-tags", changeText);
+// 等待视频信息加载完成后，执行changeText()
+waitForKeyElements(".bilibili-player-video-info-danmaku-number", changeText);
 
-// 将所有“UP主觉得很赞”替换为“UP主觉得很淦”
+// 改变播放量、弹幕数
 function changeText() {
-    $(".reply-tags").html('<span style="background:#F4F4F4;color:#757575">UP主觉得很淦</span>');
+    $(".view").html('100.0万播放 · ');
+    $(".dm").html('总弹幕数6666');
 }
